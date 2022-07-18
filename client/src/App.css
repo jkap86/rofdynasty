@@ -1,0 +1,426 @@
+h1 {
+    text-align: center;
+    color: var(--third-color);
+    filter: brightness(2);
+    text-shadow: 0 0 .25em #fefcc9, .1em -.1em .25em #feec85, -.1em -.1em .75em #ffae34, .2em -.2em 1em #ec760c, -.2em -.6em .75em #cd4606, 0 -.3em 1em #973716, .1em -.9em 1.25em #451b0e;
+}
+
+form {
+    width: fit-content;
+    display: inline-flex;
+    flex-direction: column;
+}
+form > input {
+    margin: auto;
+    width: fit-content;
+}
+
+input[type="text"] {
+    padding: .5em;
+    background-color: var(--third-color);
+    color: var(--fourth-color);
+    font-weight: 900;
+    text-align: center;
+    border: .25em solid var(--secondary-color);
+    box-shadow: 0 0 .5em var(--fourth-color);
+    font-size: 125%;
+}
+
+button[type="reset"] {
+    display: block;
+    margin: 1em auto;
+    padding: 1em;
+    border-radius: 2em;
+    background-color: var(--secondary-color);
+    color: var(--fourth-color);
+    font-weight: 900;
+    border: .1em solid var(--fifth-color);
+}
+
+table.main,
+table.secondary,
+table.leagues_users {
+    width: 100%;
+    max-width: 1200px;
+    table-layout: fixed;
+    margin: auto;
+    text-align: center;
+    border-spacing: 0;
+    color: var(--fourth-color);
+    text-shadow: 0 0 .25em var(--secondary-color);
+    background-color: rgba(90, 79, 79, 0.5);
+}
+
+div.table_container {
+    background-image: url('fire.png');
+    background-size: cover;
+    background-position: center bottom;
+    display: block;
+    overflow: scroll;
+    height: 100vh;
+}
+
+table.secondary td>p {
+    margin: auto;
+    width: fit-content;
+}
+
+table.main th {
+    color: var(--third-color);
+    filter: brightness(2);
+}
+
+img.thumbnail {
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    box-shadow: 0 0 1em var(--fifth-color);
+    object-fit: cover;
+}
+
+img.thumbnail_small {
+    width: 2em;
+    border-radius: 50%;
+}
+
+div.nav_container {
+    width: fit-content;
+    margin: auto;
+}
+
+button.nav {
+    background-color: var(--fourth-color);
+    width: fit-content;
+    padding: .5em;
+    color: var(--secondary-color);
+    font-weight: 900;
+    font-size: 125%;
+    border: unset;
+    border-radius: 1em;
+    box-shadow: inset 0 0 2em var(--primary-color);
+    cursor: pointer;
+    margin: .5em;
+}
+
+button.active_nav {
+    background-color: var(--third-color);
+    border: .1em solid var(--fourth-color);
+    filter: brightness(2);
+    color: var(--fifth-color);
+    text-shadow: 0 0 .75em var(--secondary-color);
+
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+tbody.active {
+    border: 1em solid var(--fourth-color);
+}
+
+tr.hover:hover,
+tr.active,
+p.hover:hover {
+    background-color: var(--fourth-color);
+    color: var(--third-color);
+}
+
+tr.hover2:hover,
+tr.active2 {
+    background-color: var(--fourth-color);
+}
+
+tr.hover2:hover p.league,
+tr.active2 p.league {
+    color: var(--third-color);
+}
+
+tr.hover2:hover p.draft_status,
+tr.active2 p.draft_status {
+    color: var(--secondary-color);
+    text-shadow: 0 0 .25em var(--third-color)
+}
+
+table.secondary,
+table.leagues_users {
+    border: .25em solid var(--fourth-color);
+    padding: 1em;
+    padding: 0;
+}
+
+th {
+    color: var(--third-color);
+    text-shadow: 0 0 .25em var(--fourth-color), 0 0 .15em var(--primary-color);
+    font-weight: 900;
+    font-size: 125%;
+}
+
+table.secondary th.values {
+    padding: 1em 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+div.leaguewrapper {
+    position: relative;
+    width: 100%;
+    margin: 5em auto;
+}
+
+.title_container {
+    margin: 2em auto;
+    animation: rotationX 10s infinite ease-in-out;
+}
+
+@keyframes rotationX {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(359deg);
+    }
+}
+
+div.leaguewrapper>img,
+.title_picture {
+    position: absolute;
+    width: 5em;
+    height: 5em;
+    margin: auto;
+    text-align: center;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 0;
+    filter: brightness(.5);
+}
+
+p.title {
+    position: relative;
+    z-index: 1;
+}
+
+p.league {
+    color: var(--fourth-color);
+    text-shadow: 0 0 .25em var(--secondary-color), 0 0 .5em var(--third-color);
+    filter: brightness(2);
+    font-weight: 900;
+    font-size: 125%;
+}
+
+p.draft_status {
+    color: var(--third-color);
+    filter: brightness(2);
+    font-weight: 900;
+    text-shadow: 0 0 .25em var(--secondary-color);
+}
+
+div.round_row {
+    display: inline-flex;
+}
+
+table.round {
+    margin: 1em;
+    font-size: 85%;
+    background-color: rgba(90, 79, 79, 0.15);
+    box-shadow: 0 0 1em var(--fifth-color);
+    border-spacing: 0;
+}
+
+tr.draft_picks {
+    height: 50em;
+    display: block;
+    overflow-y: scroll;
+    border: .5em solid var(--fourth-color);
+}
+
+.left {
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+.top {
+    vertical-align: top;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+p.hover.left {
+    width: 100%;
+    white-space: nowrap;
+    overflow: scroll;
+    margin-left: 0;
+    box-shadow: 0 0 .5em var(--fifth-color);
+    -ms-overflow-style: none;
+}
+
+td.picks>p {
+    padding: .5em;
+}
+
+p.header {
+    font-weight: 900;
+}
+
+div.roster_group {
+    width: fit-content;
+    margin: auto;
+    padding: 0;
+}
+
+div.checkboxes {
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+    margin-top: 2em;
+    color: var(--fourth-color);
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    color: currentColor;
+    background-color: var(--third-color);
+    margin: .5em;
+    font: inherit;
+    width: 1.15em;
+    height: 1.15em;
+    border: .05em solid var(--secondary-color);
+    border-radius: .15em;
+    display: grid;
+    place-content: center;
+    box-shadow: inset 0 0 .25em var(--primary-color), 0 0 1em var(--fourth-color);
+}
+
+input[type="checkbox"]::before {
+    content: "";
+    width: .65em;
+    height: .65em;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--fourth-color);
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+
+input[type="checkbox"]:checked::before {
+    transform: scale(1.2);
+}
+
+label.position {
+    display: inline-flex;
+    flex-direction: column;
+    margin: .25em 1em;
+    text-shadow: 0 0 .1em var(--third-color);
+    align-items: center;
+}
+
+select {
+    background-color: var(--fourth-color);
+    font-weight: 900;
+    font-size: 100%;
+    color: var(--third-color);
+}
+
+.slide_up {
+    animation: slide_up 1s ease-out;
+}
+
+@keyframes slide_up {
+    from {
+        transform: translateY(100vh);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+tr.transaction_row > td {
+    border-bottom: .1em solid rgba(90, 79, 79, 0.5);
+    border-top: .1em solid rgba(90, 79, 79, 0.5);
+}
+
+div.transaction {
+    text-align: left;
+    height: fit-content;
+    max-height: 20em;
+    overflow-y: scroll;
+    margin: 1em 0;
+    text-overflow: ellipsis;
+}
+
+p.header_user {
+    display: flex;
+    align-items: center;
+}
+tr.hover:hover p.green {
+    color: black;
+    text-shadow: 0 0 .25em green;
+}
+p.green {
+    color: green;
+    filter: brightness(2);
+    text-shadow: 0 0 .25em var(--primary-color);
+}
+p.red {
+    color: red;
+    filter: brightness(2);
+    text-shadow: 0 0 .25em var(--primary-color);
+}
+ol.page_numbers li {
+    display: inline;
+    margin: 1em;
+}
+ol.page_numbers {
+    overflow: scroll;
+    width: 75%;
+    margin: auto;
+    padding: 2em;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+
+}
+li.active_page {
+    color: var(--fourth-color);
+    font-weight: 900;
+    filter: brightness(2);
+    text-shadow: 0 0 .25em var(--secondary-color);
+}
+
+div.transaction_searches, div.search_wrapper {
+   width: fit-content;
+   margin: auto;
+}
+
+button.league_tab {
+    background-color: inherit;
+    border: unset;
+    font-weight: 900;
+    font-size: 125%;
+    color: var(--fourth-color);
+    filter: brightness(.25);
+}
+button.league_tab.active {
+    color: var(--third-color);
+    background-color: var(--secondary-color);
+    filter: brightness(2);
+}
